@@ -7,7 +7,7 @@ import datetime
 
 app = Flask(__name__)
 
-bot = Teleflask(API_KEY)
+bot = Teleflask(os.environ["API_KEY"])
 bot.init_app(app)
 
 ###
