@@ -6,10 +6,12 @@ import datetime
 ###
 
 print("oi")
+print(os.environ["API_KEY"])
 
 app = Flask(__name__)
 
 bot = Teleflask(os.environ["API_KEY"])
+print(bot)
 bot.init_app(app)
 
 ###
