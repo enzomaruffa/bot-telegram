@@ -5,12 +5,16 @@ import datetime
 
 ###
 
+print("oi")
+
 app = Flask(__name__)
 
 bot = Teleflask(os.environ["API_KEY"])
 bot.init_app(app)
 
 ###
+
+print("ooi")
 
 last_prediction_time = None
 last_prediction_decision = False
